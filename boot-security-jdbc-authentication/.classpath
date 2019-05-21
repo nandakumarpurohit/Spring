@@ -47,7 +47,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-jasper/8.5.11/tomcat-embed-jasper-8.5.11.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/eclipse/jdt/core/compiler/ecj/4.5.1/ecj-4.5.1.jar"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
