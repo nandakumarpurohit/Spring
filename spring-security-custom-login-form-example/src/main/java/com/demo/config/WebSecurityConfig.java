@@ -30,14 +30,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                                     // of the <input> tag. Default is 'username'.
       .passwordParameter("passwd")  // Password parameter, used in name attribute
                                     // of the <input> tag. Default is 'password'.
-      .successHandler((req,res,auth)->{    //Success handler invoked after successful authentication
+      /*.successHandler((req,res,auth)->{    //Success handler invoked after successful authentication
          for (GrantedAuthority authority : auth.getAuthorities()) {
             System.out.println(authority.getAuthority());
          }
          System.out.println(auth.getName());
          res.sendRedirect("/"); // Redirect user to index/home page
-      })
-//    .defaultSuccessUrl("/")   // URL, where user will go after authenticating successfully.
+      })*/
+      .defaultSuccessUrl("/")   // URL, where user will go after authenticating successfully.
                                 // Skipped if successHandler() is used.
       .failureHandler((req,res,exp)->{  // Failure handler invoked after authentication failure
          String errMsg="";
@@ -55,11 +55,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
       .and()
       .logout()
       .logoutUrl("/signout")   // Specifies the logout URL, default URL is '/logout'
-      .logoutSuccessHandler((req,res,auth)->{   // Logout handler called after successful logout 
+      /*.logoutSuccessHandler((req,res,auth)->{   // Logout handler called after successful logout 
          req.getSession().setAttribute("message", "You are logged out successfully.");
-         res.sendRedirect("/login"); // Redirect user to login page with message.
-      })
-//    .logoutSuccessUrl("/login") // URL, where user will be redirect after
+         res.sendRedirect("/"); // Redirect user to login page with message.
+      })*/
+    .logoutSuccessUrl("/login") // URL, where user will be redirect after
                                   // successful logout. Ignored if logoutSuccessHandler() is used.
       .permitAll() // Allow access to any URL associate to logout()
       .and()
