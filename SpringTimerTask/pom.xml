@@ -8,7 +8,7 @@
   <name>SpringTimerTask</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+    <org.springframework.version>5.2.7.RELEASE</org.springframework.version>
   </properties>
   <dependencies>
     <dependency>
